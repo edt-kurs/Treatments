@@ -10,7 +10,7 @@
 	
 	Выполнить(Операция);
 	
-	//ЦеныАкций.Загрузить(СписокЦенАкций.ЦеныАкций.Выгрузить());
+	ЦеныАкций.Загрузить(СписокЦенАкций.ЦеныАкций.Выгрузить());
 	ЗначениеВРеквизитФормы(СписокЦенАкций,"Объект");
 	//ОбработкаЦены = Обработки.investing.Создать();
 	//ОбработкаЦены.finamПоАкциям();
@@ -31,7 +31,7 @@
 
 	
 	Заголовки = Новый Соответствие;
-	Заголовки.Вставить("Cookie"," ses_id=OXdmJ2RrPjZlIW1rMGE1NzBkNmQ%2FP2BjMTkwNjA0b3lidmNtZTI%2BeGJtaSdmZWJ%2BMmRkZzZhNjVlMzc%2BZmc0NTk9ZjNkMD5hZWFtNzA1NTMwYTY%2BPztgZTExMDEwYm80YmVjM2UwPj5iN2lkZmhibzIgZHg2cjYnZTc3Z2YnNHM5NmYnZDc%2BNGUxbWcwZjU2MGk2aT86YGAxOTA2MDJvd2Ip");
+	Заголовки.Вставить("Cookie"," ses_id=OXdmJ2RrPjZlIW1rMGE1NzBkNmQ%2FP2BjMTkwNjA0b3lidmNtZ%2BeGJtaSdmZWJ%2BMmRkZzZhNjVlMzc%2BZmc0NTk9ZjNkMD5hZWFtNzA1NTMwYTY%2BPztgZTExMDEwYm80YmVjM2UwPj5iN2lkZmhibzIgZHg2cjYnZTc3Z2YnNHM5NmYnZDc%2BNGUxbWcwZjU2MGk2aT86YGAxOTA2MDJvd2Ip");
 	Запрос = Новый HTTPЗапрос("/portfolio/",Заголовки);
 	Результат = Соединение.Получить(Запрос);
 	Первый = Результат.ПолучитьТелоКакСтроку();
